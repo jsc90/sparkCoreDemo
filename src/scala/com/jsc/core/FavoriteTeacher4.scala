@@ -33,9 +33,8 @@ object FavoriteTeacher4 {
       (subject , teacher)
 
     })
-    subjectAndTeacher.repartitionAndSortWithinPartitions
     //如果内存够大 可以cache
-    eacher.cache()
+    subjectAndTeacher.cache()
 
     for(sub <-subjects){
       //不使用list方式排序，而是使用RDD的排序方法
